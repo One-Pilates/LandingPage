@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 * {
@@ -22,6 +22,7 @@ body {
 body {
   color: rgb(43, 43, 43);
   background: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -121,6 +122,31 @@ a {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
   }
+}
+
+/* Button styles */
+.button {
+  @apply inline-flex items-center justify-center gap-2 sm:gap-3 text-white border-none py-3 sm:py-4 px-6 sm:px-8 rounded-full text-sm sm:text-base font-semibold cursor-pointer transition-all duration-300 shadow-[0_4px_10px_rgba(247,116,51,0.3)];
+}
+
+.button:hover:not(:disabled) {
+  @apply -translate-y-0.5 shadow-[0_6px_15px_rgba(247,116,51,0.4)];
+}
+
+.button:active:not(:disabled) {
+  @apply translate-y-0 shadow-[0_3px_8px_rgba(247,116,51,0.3)];
+}
+
+.button:disabled {
+  @apply opacity-70 cursor-not-allowed shadow-none;
+}
+
+.button.bg-\[#F77433\]:hover:not(:disabled) {
+  background-color: rgba(247, 116, 51, 0.85);
+}
+
+.button-icon {
+  @apply text-sm sm:text-base;
 }
 
 /* WhatsApp Button customization */

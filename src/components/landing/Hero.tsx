@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -26,20 +28,21 @@ export default function Hero() {
             "Porque seu corpo é único e merece cuidado exclusivo."
           </p>
 
-          {/* Buttons Container */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 flex-wrap">
             {/* CTA Button */}
-            {/* <Botao 
-              texto="Agende sua aula experimental" 
-              cor="bg-main" 
-              icone={FaWhatsapp}
+            <button
               onClick={() =>
                 window.open(
                   'https://api.whatsapp.com/send/?phone=551130514139&text=Ol%C3%A1%2C+consegui+o+contato+atrav%C3%A9s+do+site+e+gostaria+de+agendar+uma+aula+experimental.&type=phone_number&app_absent=0', 
                   '_blank'
                 )
               }
-            /> */}
+              className="button bg-[#F77433]"
+              aria-label="Agende sua aula experimental"
+            >
+              <FaWhatsapp size={20} className="button-icon" />
+              <span>Agende sua aula experimental</span>
+            </button>
 
             {/* WhatsApp Info */}
             <div className="flex items-center gap-3 text-white">

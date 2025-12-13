@@ -192,10 +192,11 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSending}
-                className="self-start inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#F77433] text-white border-none py-3 sm:py-4 px-6 sm:px-8 rounded-full text-sm sm:text-base font-semibold cursor-pointer transition-all duration-300 shadow-[0_4px_10px_rgba(247,116,51,0.3)] hover:bg-[#F77433]/85 hover:-translate-y-0.5 hover:shadow-[0_6px_15px_rgba(247,116,51,0.4)] active:translate-y-0 active:shadow-[0_3px_8px_rgba(247,116,51,0.3)] disabled:opacity-70 disabled:cursor-not-allowed disabled:shadow-none disabled:hover:translate-y-0"
+                className="button bg-[#F77433] self-start"
+                aria-label="Enviar Mensagem"
               >
-                <FaPaperPlane className="text-sm sm:text-base" />
-                {isSending ? 'Enviando...' : 'Enviar Mensagem'}
+                <FaPaperPlane size={20} className="button-icon" />
+                <span>{isSending ? 'Enviando...' : 'Enviar Mensagem'}</span>
               </button>
             </form>
           </div>
