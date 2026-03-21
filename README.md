@@ -1,58 +1,71 @@
-# One Pilates — Landing Page 🌐
+# One Pilates - Landing Page
 
-## 📌 Introdução
-A **One Pilates Landing Page** é a página institucional e de apresentação do estúdio One Pilates.
+Landing page institucional da One Pilates, com foco em performance, responsividade e experiencia moderna.
 
-A aplicação foi desenvolvida em **Next.js com TypeScript**, oferecendo uma experiência moderna, performática e otimizada para SEO, apresentando os serviços, equipe e diferenciais do estúdio.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=vite,react,ts,tailwind" alt="Tecnologias principais" />
+</p>
 
----
+## Stack
+- Vite
+- React 18
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- Framer Motion
+- EmailJS
+- SweetAlert2
 
-## 🛠 Tecnologias
-- Next.js  
-- TypeScript  
-- React  
+## Funcionalidades
+- Landing page moderna e responsiva
+- Navegacao por secoes (Home, Servicos, Sobre, Equipamentos, Depoimentos, Contato)
+- Paginas dedicadas para servicos
+- Pagina dedicada para equipamentos
+- Integracao com WhatsApp para agendamento
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=nextjs,typescript,react" alt="Landing Page Skills" />
-</div>
+## Requisitos
+- Node.js 18+
+- npm 9+
 
----
-
-## ⚙️ Instalação
-
+## Como rodar localmente
 ```bash
-# Entrar no diretório da landing page
-cd one-pilates/landing-page
-
-# Instalar dependências
+# instalar dependencias
 npm install
 
-# Rodar o projeto em desenvolvimento
+# ambiente de desenvolvimento
 npm run dev
 ```
 
----
+Aplicacao local: http://localhost:5173
 
-## 🚀 Uso
-
-Após iniciar o projeto:
-
-Aplicação disponível em: http://localhost:3000
-
----
-
-## 📦 Build para Produção
-
+## Scripts
 ```bash
-# Criar build otimizado
+# desenvolvimento
+npm run dev
+
+# build de producao
 npm run build
 
-# Rodar versão de produção
-npm start
+# preview local do build
+npm run preview
+
+# checagem de tipos
+npm run type-check
 ```
 
----
+## Build para producao
+```bash
+npm run build
+```
 
-## 📄 Licença
+Os arquivos finais serao gerados em dist/.
 
-Este projeto é distribuído sob a licença MIT.
+## Estrutura principal
+```text
+src/
+  components/
+    landing/
+  data/
+  pages/
+  styles/
+```
