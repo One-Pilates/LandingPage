@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState, FormEvent } from 'react';
+import { useRef, useState, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { FaPaperPlane } from 'react-icons/fa';

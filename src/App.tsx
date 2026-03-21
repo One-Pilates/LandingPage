@@ -1,59 +1,35 @@
 import Navbar from '@/components/landing/Navbar';
-import Hero from '@/components/landing/Hero';
-import Services from '@/components/landing/Services';
-import About from '@/components/landing/About';
-import Equipment from '@/components/landing/Equipment';
-import Info from '@/components/landing/Info';
-import Testimonials from '@/components/landing/Testimonials';
-import FAQ from '@/components/landing/FAQ';
-import Contact from '@/components/landing/Contact';
-import Footer from '@/components/landing/Footer';
-import Slider from '@/components/landing/Slider';
 import WhatsAppButton from '@/components/landing/WhatsAppButton';
-import ScrollReveal from '@/components/shared/ScrollReveal';
 import VLibras from '@/components/shared/VLibras';
+import LandingPage from '@/pages/LandingPage';
+import EquipmentsPage from '@/pages/EquipmentsPage';
+import ServicePage from '@/pages/ServicePage';
+import { useEffect } from 'react';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+
+function ScrollToTopOnRouteChange() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, [location.pathname]);
+
+  return null;
+}
 
 export default function App() {
   return (
-    <main className="landing-page">
+    <>
+      <ScrollToTopOnRouteChange />
       <Navbar />
-      <Hero />
-
-      <ScrollReveal animation="fade-up">
-        <Slider />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up" delay={0.2}>
-        <Services />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-        <About />
-      </ScrollReveal>
-
-      <ScrollReveal animation="zoom-in">
-        <Equipment />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-        <Info />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-        <Testimonials />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-        <FAQ />
-      </ScrollReveal>
-
-      <ScrollReveal animation="fade-up">
-        <Contact />
-      </ScrollReveal>
-
-      <Footer />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/equipamentos" element={<EquipmentsPage />} />
+        <Route path="/servicos/:slug" element={<ServicePage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
       <WhatsAppButton />
       <VLibras />
-    </main>
+    </>
   );
 }

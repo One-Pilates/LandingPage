@@ -1,11 +1,10 @@
 'use client';
 
 import React from 'react';
-import { FaPlus } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <section className="w-full bg-white py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 relative">
+    <section id="about" className="w-full bg-white py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 relative">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Content Side */}
@@ -27,11 +26,6 @@ export default function About() {
               proporcionando fácil acesso e conforto a todos os alunos.
             </p>
 
-            {/* Button */}
-            <button className="button bg-[#F77433]" aria-label="Mais Detalhes">
-              <FaPlus size={20} className="button-icon" />
-              <span>Mais Detalhes</span>
-            </button>
           </div>
 
           {/* Image Side */}
