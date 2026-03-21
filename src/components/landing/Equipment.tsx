@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Equipment() {
   return (
@@ -38,10 +39,14 @@ export default function Equipment() {
             </p>
 
             {/* Button */}
-            <button className="button bg-[#F77433] self-center lg:self-start" aria-label="Mais Detalhes">
+            <Link
+              to="/equipamentos"
+              className="button bg-[#F77433] self-center lg:self-start"
+              aria-label="Mais Detalhes dos Equipamentos"
+            >
               <FaPlus size={20} className="button-icon" />
               <span>Mais Detalhes</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
