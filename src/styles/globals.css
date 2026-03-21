@@ -34,19 +34,19 @@ a {
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold;
   }
-  
+
   h2 {
     @apply text-3xl md:text-4xl lg:text-5xl font-bold;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl font-semibold;
   }
-  
+
   h4 {
     @apply text-xl md:text-2xl font-semibold;
   }
-  
+
   p {
     @apply text-base md:text-lg;
   }
@@ -56,23 +56,23 @@ a {
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section {
     @apply py-16 md:py-24;
   }
-  
+
   .btn {
     @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2;
   }
-  
+
   .btn-primary {
     @apply bg-main hover:bg-main-hover text-white shadow-lg hover:shadow-xl;
   }
-  
+
   .btn-secondary {
     @apply bg-white hover:bg-gray-100 text-main border-2 border-main;
   }
-  
+
   .btn-outline {
     @apply bg-transparent hover:bg-main hover:text-white text-main border-2 border-main;
   }
@@ -84,7 +84,6 @@ a {
   }
 }
 
-/* Animações personalizadas */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -116,7 +115,6 @@ a {
   }
 }
 
-/* Scroll suave para ancoras */
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
     scroll-behavior: smooth;
@@ -124,7 +122,6 @@ a {
   }
 }
 
-/* Button styles */
 .button {
   @apply inline-flex items-center justify-center gap-2 sm:gap-3 text-white border-none py-3 sm:py-4 px-6 sm:px-8 rounded-full text-sm sm:text-base font-semibold cursor-pointer transition-all duration-300 shadow-[0_4px_10px_rgba(247,116,51,0.3)];
 }
@@ -141,7 +138,7 @@ a {
   @apply opacity-70 cursor-not-allowed shadow-none;
 }
 
-.button.bg-\[#F77433\]:hover:not(:disabled) {
+.button.bg-\[\#F77433\]:hover:not(:disabled) {
   background-color: rgba(247, 116, 51, 0.85);
 }
 
@@ -149,7 +146,6 @@ a {
   @apply text-sm sm:text-base;
 }
 
-/* WhatsApp Button customization */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -158,7 +154,6 @@ a {
   animation: bounce-slow 3s infinite;
 }
 
-/* Loading states */
 .skeleton {
   @apply animate-pulse bg-gray-200 rounded;
 }
