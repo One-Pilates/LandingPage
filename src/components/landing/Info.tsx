@@ -1,81 +1,73 @@
-import React from 'react';
 import { FaPhoneAlt, FaRegBuilding } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 export default function Info() {
   return (
-    <section className="w-full py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16">
-          
-          {/* Phone Card */}
-          <div className="p-6 sm:p-8 rounded-xl text-center transition-all duration-300 hover:-translate-y-1">
-            {/* Icon */}
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-5 sm:mb-6 bg-gradient-to-br from-[#F77433] to-[#FF9461] rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(255,112,67,0.25)]">
-              <FaPhoneAlt className="text-2xl sm:text-3xl md:text-4xl text-white" />
+    <section className="w-full bg-[#f8faf7] px-4 py-20 sm:px-6 sm:py-24 md:py-28 lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 text-center sm:mb-14">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c75a21] sm:text-sm">
+            Informacoes essenciais
+          </p>
+          <h2 className="text-3xl font-semibold text-[#12202a] sm:text-4xl md:text-5xl">
+            Atendimento rapido e personalizado
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-10 sm:gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <article className="p-5 text-center transition-all duration-300 hover:-translate-y-1 sm:p-6">
+            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#f59a42,#f1722d)] shadow-[0_7px_16px_rgba(241,114,45,0.28)] sm:mb-6 sm:h-[4.5rem] sm:w-[4.5rem]">
+              <FaPhoneAlt className="text-2xl text-white sm:text-3xl" />
             </div>
 
-            {/* Title */}
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 tracking-tight">
-              Telefone
-            </h3>
+            <h3 className="mb-3 text-xl font-semibold tracking-tight text-[#12202a] sm:text-2xl">Telefone</h3>
 
-            {/* Highlight */}
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#F77433] mb-3 leading-snug">
+            <a
+              href="tel:+551130514139"
+              className="mb-3 inline-block text-base font-semibold text-[#c75a21] transition-colors duration-300 hover:text-[#a84917] sm:text-lg"
+            >
               +55 (11) 3051-4139
-            </p>
+            </a>
 
-            {/* Description */}
-            <p className="text-sm sm:text-base leading-relaxed text-gray-600 m-0">
-              Ligue para nós ou clique no número para falar conosco e marcar sua visita.
+            <p className="text-sm leading-relaxed text-[#5b6973] sm:text-base">
+              Ligue para falar com nossa equipe e agendar sua visita ao estudio.
             </p>
-          </div>
+          </article>
 
-          {/* Email Card */}
-          <div className="p-6 sm:p-8 rounded-xl text-center transition-all duration-300 hover:-translate-y-1">
-            {/* Icon */}
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-5 sm:mb-6 bg-gradient-to-br from-[#F77433] to-[#FF9461] rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(255,112,67,0.25)]">
-              <MdEmail className="text-2xl sm:text-3xl md:text-4xl text-white" />
+          <article className="p-5 text-center transition-all duration-300 hover:-translate-y-1 sm:p-6">
+            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#f59a42,#f1722d)] shadow-[0_7px_16px_rgba(241,114,45,0.28)] sm:mb-6 sm:h-[4.5rem] sm:w-[4.5rem]">
+              <MdEmail className="text-2xl text-white sm:text-3xl" />
             </div>
 
-            {/* Title */}
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 tracking-tight">
-              E-mail
-            </h3>
+            <h3 className="mb-3 text-xl font-semibold tracking-tight text-[#12202a] sm:text-2xl">E-mail</h3>
 
-            {/* Highlight */}
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#F77433] mb-3 leading-snug">
+            <a
+              href="mailto:atendimento@onepilates.com.br"
+              className="mb-3 inline-block break-words text-base font-semibold text-[#c75a21] transition-colors duration-300 hover:text-[#a84917] sm:text-lg"
+            >
               atendimento@onepilates.com.br
-            </p>
+            </a>
 
-            {/* Description */}
-            <p className="text-sm sm:text-base leading-relaxed text-gray-600 m-0">
-              Ficou com alguma dúvida ou tem alguma sugestão? Envie para nós.
+            <p className="text-sm leading-relaxed text-[#5b6973] sm:text-base">
+              Ficou com alguma duvida ou sugestao? Escreva para a nossa equipe.
             </p>
-          </div>
+          </article>
 
-          {/* Hours Card */}
-          <div className="p-6 sm:p-8 rounded-xl text-center transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
-            {/* Icon */}
-            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-5 sm:mb-6 bg-gradient-to-br from-[#F77433] to-[#FF9461] rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(255,112,67,0.25)]">
-              <FaRegBuilding className="text-2xl sm:text-3xl md:text-4xl text-white" />
+          <article className="p-5 text-center transition-all duration-300 hover:-translate-y-1 sm:p-6 md:col-span-2 lg:col-span-1">
+            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#f59a42,#f1722d)] shadow-[0_7px_16px_rgba(241,114,45,0.28)] sm:mb-6 sm:h-[4.5rem] sm:w-[4.5rem]">
+              <FaRegBuilding className="text-2xl text-white sm:text-3xl" />
             </div>
 
-            {/* Title */}
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4 tracking-tight">
-              Horário de Atendimento
+            <h3 className="mb-3 text-xl font-semibold tracking-tight text-[#12202a] sm:text-2xl">
+              Horario de atendimento
             </h3>
 
-            {/* Highlight */}
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#F77433] mb-3 leading-snug">
-              Nosso horário de atendimento
-            </p>
+            <p className="mb-3 text-base font-semibold text-[#c75a21] sm:text-lg">Seg a Qui: 7h as 22h</p>
 
-            {/* Description */}
-            <p className="text-sm sm:text-base leading-relaxed text-gray-600 m-0">
-              é de Seg. a Qui. das 7h as 22 e Sex das 7h ás 19h
+            <p className="text-sm leading-relaxed text-[#5b6973] sm:text-base">
+              Sexta-feira: 7h as 19h. Entre em contato para confirmar disponibilidade de horarios.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>

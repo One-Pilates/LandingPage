@@ -37,7 +37,7 @@ export default function EquipmentsPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer compact />
     </main>
   );
 }

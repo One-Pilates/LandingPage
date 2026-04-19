@@ -25,7 +25,7 @@ export default function ServicePage() {
             </Link>
           </div>
         </section>
-        <Footer />
+        <Footer compact />
       </main>
     );
   }
@@ -72,7 +72,7 @@ export default function ServicePage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer compact />
     </main>
   );
 }

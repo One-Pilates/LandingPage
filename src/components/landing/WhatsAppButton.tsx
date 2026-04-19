@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function WhatsAppButton() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -24,6 +24,16 @@ export default function WhatsAppButton() {
 
   return (
     <>
+      <a
+        href="https://www.instagram.com/one_pilates/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir Instagram da One Pilates"
+        className="fixed bottom-20 right-4 sm:bottom-24 sm:right-5 md:bottom-28 md:right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)] text-white shadow-lg transition-transform duration-200 hover:scale-110 hover:shadow-xl active:scale-95 sm:h-14 sm:w-14 md:h-16 md:w-16"
+      >
+        <FaInstagram className="text-2xl sm:text-3xl md:text-4xl" />
+      </a>
+
       {/* Floating WhatsApp Button */}
       <button
         onClick={handleClick}

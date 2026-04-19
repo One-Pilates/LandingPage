@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface Testimonial {
   name: string;
   text: string;
@@ -34,60 +32,58 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 sm:py-20 md:py-24 bg-white px-4 sm:px-6">
+    <section
+      id="testimonials"
+      className="bg-[linear-gradient(180deg,#ffffff_0%,#f3f7f4_100%)] px-4 py-16 sm:px-6 sm:py-20 md:py-24"
+    >
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12 sm:mb-14 md:mb-16">
-          <p className="text-sm text-gray-500 mb-2">
-            O que os clientes dizem.
+        <div className="mb-12 text-center sm:mb-14 md:mb-16">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c75a21] sm:text-sm">
+            Experiencia de quem vive o metodo
           </p>
-          
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Testemunhos
+
+          <h2 className="text-3xl font-semibold text-[#12202a] sm:text-4xl md:text-5xl">
+            Resultados reais, com acompanhamento proximo
           </h2>
-          
-          <span className="block text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            "Atribuímos um grande valor a relacionamentos sólidos e vemos os benefícios que eles{' '}
-            <br className="hidden sm:block" />
-            trazem para o nosso negócio. O feedback do cliente é vital para nos ajudar a acertar."
-          </span>
+
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-[#5a6873] sm:text-base md:text-lg">
+            Relatos de alunos que evoluiram em mobilidade, postura e bem-estar
+            com um plano individualizado e orientacao tecnica em cada sessao.
+          </p>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <article
               key={index}
-              className="bg-gray-50 p-6 sm:p-7 md:p-8 rounded-2xl flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_6px_16px_rgba(0,0,0,0.1)]"
+              className="group flex flex-col rounded-3xl border border-[#d6ddd8] bg-white p-6 shadow-[0_12px_30px_rgba(12,24,36,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(12,24,36,0.12)] sm:p-7 md:p-8"
             >
-              {/* Top Section */}
               <div className="flex items-center mb-4 sm:mb-5">
-                {/* Avatar */}
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-700 text-white flex items-center justify-center font-bold text-lg sm:text-xl mr-3 sm:mr-4 flex-shrink-0">
+                <div className="mr-3 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#1b2c37] text-lg font-semibold text-white sm:mr-4 sm:h-14 sm:w-14 sm:text-xl">
                   {testimonial.initials}
                 </div>
 
-                {/* Info */}
                 <div className="flex flex-col">
-                  <h4 className="font-semibold text-gray-900 text-sm sm:text-base">
+                  <h4 className="text-sm font-semibold text-[#12202a] sm:text-base">
                     {testimonial.name}
                   </h4>
-                  <span className="text-xs sm:text-sm text-gray-500">
+                  <span className="text-xs text-[#6c7a84] sm:text-sm">
                     {testimonial.time}
                   </span>
                 </div>
               </div>
 
-              {/* Stars */}
-              <div className="text-yellow-400 text-lg sm:text-xl mb-3 sm:mb-4">
+              <div className="mb-3 text-lg text-[#f59a42] sm:mb-4 sm:text-xl">
                 {'★'.repeat(testimonial.rating)}
               </div>
 
-              {/* Text */}
-              <p className="italic text-gray-600 text-sm sm:text-base leading-relaxed">
+              <p className="text-sm italic leading-relaxed text-[#55636d] sm:text-base">
                 "{testimonial.text}"
               </p>
-            </div>
+              <span className="mt-5 inline-flex w-fit rounded-full bg-[#f59a42]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#c75a21]">
+                Avaliacao 5 estrelas
+              </span>
+            </article>
           ))}
         </div>
       </div>

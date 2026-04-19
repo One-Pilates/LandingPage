@@ -1,44 +1,56 @@
 'use client';
 
-import React from 'react';
 import { asset } from '@/utils/asset';
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-white py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 relative">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-          {/* Content Side */}
+    <section
+      id="about"
+      className="relative w-full overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f6f8f5_100%)] px-4 py-16 sm:px-6 sm:py-20 md:py-24 lg:py-28"
+    >
+      <div className="pointer-events-none absolute left-0 top-6 h-48 w-48 rounded-full bg-[rgba(241,114,45,0.14)] blur-3xl" />
+      <div className="pointer-events-none absolute bottom-10 right-0 h-52 w-52 rounded-full bg-[rgba(20,85,60,0.12)] blur-3xl" />
+
+      <div className="relative mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 items-center gap-10 md:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="text-center lg:text-left">
-            {/* Subtitle */}
-            <p className="text-xs sm:text-sm font-semibold text-[#F77433] mb-2 tracking-wide uppercase">
-              +20 ANOS DE HISTÓRIA
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c75a21] sm:text-sm">
+              Mais de 20 anos de historia
             </p>
 
-            {/* Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
-              Sobre nossa trajetória...
+            <h2 className="text-3xl font-semibold text-[#12202a] sm:text-4xl md:text-5xl">
+              Cuidado individual para evolucao continua
             </h2>
 
-            {/* Description */}
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
-              Somos um Studio de Pilates localizado em São Paulo, com profissionais experientes e
-              equipamentos de última geração. Nosso estúdio está situado próximo à Av. Paulista e ao Metrô Paraíso,
-              proporcionando fácil acesso e conforto a todos os alunos.
+            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-[#5a6873] sm:text-lg lg:mx-0">
+              Somos um studio de pilates em Sao Paulo com atendimento personalizado,
+              profissionais experientes e estrutura completa para quem busca mais movimento,
+              postura e qualidade de vida.
             </p>
 
+            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-3 lg:max-w-xl">
+              <div className="rounded-2xl border border-[#d6ddd8] bg-white p-4 text-left shadow-[0_8px_18px_rgba(12,24,36,0.06)]">
+                <p className="text-2xl font-semibold text-[#12202a]">20+</p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-[#5a6873]">Anos de experiencia</p>
+              </div>
+              <div className="rounded-2xl border border-[#d6ddd8] bg-white p-4 text-left shadow-[0_8px_18px_rgba(12,24,36,0.06)]">
+                <p className="text-2xl font-semibold text-[#12202a]">100%</p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-[#5a6873]">Atendimento humano</p>
+              </div>
+              <div className="rounded-2xl border border-[#d6ddd8] bg-white p-4 text-left shadow-[0_8px_18px_rgba(12,24,36,0.06)]">
+                <p className="text-2xl font-semibold text-[#12202a]">SP</p>
+                <p className="mt-1 text-xs uppercase tracking-wide text-[#5a6873]">Proximo ao Paraiso</p>
+              </div>
+            </div>
           </div>
 
-          {/* Image Side */}
           <div className="flex justify-center relative">
-            {/* Glow Effect Behind */}
-            <div className="absolute top-1/2 left-1/2 w-[70%] h-[70%] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,_rgba(247,116,51,0.35)_0%,_transparent_70%)] blur-[60px] -z-10" />
+            <div className="absolute left-1/2 top-1/2 -z-10 h-[72%] w-[72%] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,_rgba(247,116,51,0.35)_0%,_transparent_70%)] blur-[60px]" />
 
-            {/* Image */}
             <img
               src={asset('/about.png')}
               alt="Studio de Pilates"
-              className="w-[80%] max-w-md h-auto rounded-2xl bg-gray-100 shadow-[0_0_25px_rgba(247,116,51,0.25),_0_6px_20px_rgba(0,0,0,0.08)] transition-all duration-400 ease-in-out hover:scale-105 hover:shadow-[0_0_35px_rgba(247,116,51,0.4),_0_8px_28px_rgba(0,0,0,0.1)]"
+              className="h-auto w-[82%] max-w-md rounded-3xl border border-white bg-gray-100 shadow-[0_12px_32px_rgba(8,18,28,0.12)] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_16px_40px_rgba(8,18,28,0.16)]"
             />
           </div>
         </div>
