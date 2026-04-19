@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { asset } from '@/utils/asset';
 
 interface SlideImage {
   src: string;
@@ -19,7 +20,7 @@ export default function Slider({
   slideInterval = 4000 
 }: SliderProps) {
   const defaultImages: SlideImage[] = Array.from({ length: 6 }, (_, i) => ({
-    src: `/slider/${i + 1}.jpg`,
+    src: asset(`/slider/${i + 1}.jpg`),
     alt: `Slide ${i + 1}`,
   }));
 

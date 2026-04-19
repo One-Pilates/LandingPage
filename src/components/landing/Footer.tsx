@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { asset } from '@/utils/asset';
+
 
 export default function Footer() {
   return (
@@ -8,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] gap-8 sm:gap-10 md:gap-12 lg:gap-20 items-start mb-10 sm:mb-12 md:mb-14 text-center lg:text-left">
           <div className="flex flex-col gap-3 sm:gap-4 items-center lg:items-start">
             <img 
-              src="/logoOriginal.png" 
+              src={asset('/logoOriginal.png')} 
               alt="One Pilates" 
               className="w-32 sm:w-36 md:w-40 h-auto mb-2 sm:mb-3 rounded-xl"
             />
@@ -44,37 +46,37 @@ export default function Footer() {
             
             <nav className="flex flex-col gap-2 sm:gap-3">
               <a 
-                href="/#home" 
+                href={`${import.meta.env.BASE_URL}#home`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Home
               </a>
               <a 
-                href="/#services" 
+                href={`${import.meta.env.BASE_URL}#services`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Servicos
               </a>
               <a 
-                href="/#about" 
+                href={`${import.meta.env.BASE_URL}#about`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Sobre
               </a>
               <a 
-                href="/#equipment" 
+                href={`${import.meta.env.BASE_URL}#equipment`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Equipamentos
               </a>
               <a 
-                href="/#testimonials" 
+                href={`${import.meta.env.BASE_URL}#testimonials`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Depoimentos
               </a>
               <a 
-                href="/#contact" 
+                href={`${import.meta.env.BASE_URL}#contact`}
                 className="text-white/75 no-underline text-sm sm:text-base transition-colors duration-300 hover:text-[#f59a42]"
               >
                 Contato

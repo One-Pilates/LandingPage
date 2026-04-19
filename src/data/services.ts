@@ -1,3 +1,5 @@
+import { asset } from '@/utils/asset';
+
 export interface ServiceDetail {
   slug: string;
   title: string;
@@ -12,8 +14,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'acupuntura',
     title: 'Acupuntura',
-    icon: '/services/1.png',
-    image: '/services/1.png',
+    icon: asset('/services/1.png'),
+    image: asset('/services/1.png'),
     shortDescription: 'Equilibrio energetico para alivio de dores e melhora do bem-estar.',
     description:
       'A acupuntura e uma tecnica milenar que utiliza estimulos em pontos especificos do corpo para reduzir dores, equilibrar funcoes e apoiar o tratamento de tensoes fisicas e emocionais.',
@@ -27,8 +29,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'osteopatia',
     title: 'Osteopatia',
-    icon: '/services/2.png',
-    image: '/services/2.png',
+    icon: asset('/services/2.png'),
+    image: asset('/services/2.png'),
     shortDescription: 'Abordagem manual para restaurar mobilidade e funcionalidade do corpo.',
     description:
       'A osteopatia avalia o corpo como um sistema integrado. Com tecnicas manuais, busca corrigir disfuncoes de mobilidade, aliviar sobrecargas e melhorar o funcionamento global.',
@@ -42,8 +44,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'rpg',
     title: 'RPG (Reeducacao Postural Global)',
-    icon: '/services/3.png',
-    image: '/services/3.png',
+    icon: asset('/services/3.png'),
+    image: asset('/services/3.png'),
     shortDescription: 'Correcao postural personalizada com foco em alinhamento e respiracao.',
     description:
       'A RPG trabalha cadeias musculares de forma individualizada para corrigir desvios posturais, melhorar padrao respiratorio e reduzir compensacoes do dia a dia.',
@@ -57,8 +59,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'microfisioterapia',
     title: 'Microfisioterapia',
-    icon: '/services/4.png',
-    image: '/services/4.png',
+    icon: asset('/services/4.png'),
+    image: asset('/services/4.png'),
     shortDescription: 'Toque terapeutico para identificar e tratar memorias de traumas no corpo.',
     description:
       'A microfisioterapia utiliza um toque especifico e suave para localizar cicatrizes emocionais e fisicas no organismo, estimulando a autorregulacao biologica.',
@@ -72,8 +74,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'shiatsu',
     title: 'Shiatsu',
-    icon: '/services/5.png',
-    image: '/services/5.png',
+    icon: asset('/services/5.png'),
+    image: asset('/services/5.png'),
     shortDescription: 'Pressao em pontos estrategicos para aliviar tensoes e recuperar energia.',
     description:
       'O shiatsu e uma terapia manual de origem japonesa que aplica pressoes ritmadas ao longo do corpo para promover relaxamento profundo e restaurar vitalidade.',
@@ -87,8 +89,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'drenagem-linfatica',
     title: 'Drenagem Linfatica',
-    icon: '/services/6.png',
-    image: '/services/6.png',
+    icon: asset('/services/6.png'),
+    image: asset('/services/6.png'),
     shortDescription: 'Tecnica suave para reduzir retencao e melhorar a circulacao linfatica.',
     description:
       'A drenagem linfatica estimula o sistema linfatico por meio de manobras suaves, ajudando no controle de edemas, eliminacao de liquidos e sensacao de leveza.',
@@ -102,8 +104,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'fisioterapia',
     title: 'Fisioterapia',
-    icon: '/services/7.png',
-    image: '/services/7.png',
+    icon: asset('/services/7.png'),
+    image: asset('/services/7.png'),
     shortDescription: 'Reabilitacao funcional com protocolos personalizados para cada necessidade.',
     description:
       'A fisioterapia atua na prevencao e no tratamento de disfuncoes musculoesqueleticas, neurologicas e respiratorias, com plano terapeutico baseado em avaliacao individual.',
@@ -117,8 +119,8 @@ export const servicesData: ServiceDetail[] = [
   {
     slug: 'pilates',
     title: 'Pilates',
-    icon: '/services/8.png',
-    image: '/services/8.png',
+    icon: asset('/services/8.png'),
+    image: asset('/services/8.png'),
     shortDescription: 'Metodo de condicionamento com foco em controle, forca, mobilidade e postura.',
     description:
       'O pilates combina exercicios de solo e aparelhos para fortalecer o centro do corpo, melhorar postura e ampliar mobilidade de forma segura e progressiva.',

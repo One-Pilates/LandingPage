@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link, useLocation } from 'react-router-dom';
+import { asset } from '@/utils/asset';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -29,12 +30,12 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { label: 'Home', href: '/#home' },
-    { label: 'Servicos', href: '/#services' },
-    { label: 'Sobre', href: '/#about' },
-    { label: 'Equipamentos', href: '/#equipment' },
-    { label: 'Depoimentos', href: '/#testimonials' },
-    { label: 'Contato', href: '/#contact' },
+    { label: 'Home', href: `${import.meta.env.BASE_URL}#home` },
+    { label: 'Servicos', href: `${import.meta.env.BASE_URL}#services` },
+    { label: 'Sobre', href: `${import.meta.env.BASE_URL}#about` },
+    { label: 'Equipamentos', href: `${import.meta.env.BASE_URL}#equipment` },
+    { label: 'Depoimentos', href: `${import.meta.env.BASE_URL}#testimonials` },
+    { label: 'Contato', href: `${import.meta.env.BASE_URL}#contact` },
   ];
 
   return (
@@ -52,7 +53,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex-shrink-0 transition-all duration-300 ease-in-out" onClick={closeMenu}>
             <img
-              src="/logoBranca.png"
+              src={asset('/logoBranca.png')}
               alt="One Pilates"
               className="h-9 sm:h-10 md:h-11 w-auto object-contain"
             />

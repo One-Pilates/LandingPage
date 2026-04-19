@@ -42,3 +42,7 @@ yarn-error.log*
 # Outros
 .cache
 .temp
+
+# Arquivos de teste local
+docker-compose.test.yml
+nginx.proxy.test.conf

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { asset } from '@/utils/asset';
 
 export default function Hero() {
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER ?? '551130514139';
@@ -14,7 +15,7 @@ export default function Hero() {
     <section id="home" className="hero-shell">
       <div
         className="hero-bg"
-        style={{ backgroundImage: "url('/background.png')" }}
+        style={{ backgroundImage: `url('${asset('/background.png')}')` }}
         aria-hidden="true"
       />
       <div className="hero-overlay" aria-hidden="true" />
@@ -43,7 +44,7 @@ export default function Hero() {
               <span>Agende sua aula experimental</span>
             </button>
 
-            <a href="/#services" className="btn-outline-soft">
+            <a href={`${import.meta.env.BASE_URL}#services`} className="btn-outline-soft">
               Explorar Servicos
             </a>
           </div>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { FaPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { asset } from '@/utils/asset';
 
 export default function Equipment() {
   return (
@@ -17,7 +18,7 @@ export default function Equipment() {
 
             {/* Image */}
             <img
-              src="/1.jpg"
+              src={asset('/1.jpg')}
               alt="Equipamentos do Studio One Pilates"
               className="w-full max-w-md h-auto rounded-3xl bg-gray-100 shadow-[0_0_25px_rgba(247,116,51,0.25),_0_6px_20px_rgba(0,0,0,0.08)] transition-all duration-400 hover:scale-105 hover:shadow-[0_0_35px_rgba(247,116,51,0.4),_0_8px_28px_rgba(0,0,0,0.1)] z-10 relative"
             />

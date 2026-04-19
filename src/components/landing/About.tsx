@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { asset } from '@/utils/asset';
 
 export default function About() {
   return (
@@ -35,7 +36,7 @@ export default function About() {
 
             {/* Image */}
             <img
-              src="/about.png"
+              src={asset('/about.png')}
               alt="Studio de Pilates"
               className="w-[80%] max-w-md h-auto rounded-2xl bg-gray-100 shadow-[0_0_25px_rgba(247,116,51,0.25),_0_6px_20px_rgba(0,0,0,0.08)] transition-all duration-400 ease-in-out hover:scale-105 hover:shadow-[0_0_35px_rgba(247,116,51,0.4),_0_8px_28px_rgba(0,0,0,0.1)]"
             />

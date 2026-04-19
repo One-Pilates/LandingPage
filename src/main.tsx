@@ -4,9 +4,13 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './styles/globals.css';
 
+// Deriva o basename do BASE_URL do Vite (definido pela opção `base` do vite.config.ts)
+// "/landing/" → "/landing"  |  "/" → "/"
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
